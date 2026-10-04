@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">דילוג לתוכן הראשי</a>
     <header class="wrap">
-      <p class="brand">autoReminder</p>
-      <nav>
+      <p class="brand"><a href="./">autoReminder</a></p>
+      <nav aria-label="ניווט ראשי">
         <a href="#en" lang="en">English</a>
         <a href="privacy.html">מדיניות פרטיות</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
       </nav>
     </header>
 
-    <main class="wrap">
+    <main id="main" class="wrap">
       <section>
         <h1>תזכורות WhatsApp ואיסוף מסמכים למשרדים קטנים</h1>
         <p class="lead">
@@ -48,15 +50,18 @@
         <h2>יצירת קשר <span lang="en">/ Contact</span></h2>
         <p>
           <strong>גוטמן נעה</strong><br />
-          <a href="mailto:noa@guttman.dev">noa@guttman.dev</a>
-          <br />
-          <a href="tel:+972549988171" dir="ltr">054-9988171</a>
+          דוא"ל: <a href="mailto:noa@guttman.dev">noa@guttman.dev</a><br />
+          טלפון: <a href="tel:+972549988171" dir="ltr">054-9988171</a>
         </p>
       </section>
     </main>
 
     <footer class="wrap">
-      <p>© 2026 גוטמן נעה · <a href="privacy.html">מדיניות פרטיות / Privacy policy</a></p>
+      <p>
+        © 2026 גוטמן נעה ·
+        <a href="privacy.html">מדיניות פרטיות <span lang="en">/ Privacy policy</span></a> ·
+        <a href="accessibility.html">הצהרת נגישות</a>
+      </p>
     </footer>
   </body>
 </html>
