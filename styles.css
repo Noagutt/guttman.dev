@@ -327,12 +327,62 @@ header {
   font-size: 16px;
 }
 
+.band-en {
+  margin-top: 56px;
+}
+
 .en {
-  padding-block: 48px 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1040px;
+  padding-block: 8px;
 }
 
 .en h2 {
-  margin-top: 0;
+  font-size: clamp(24px, 3.5vw, 32px);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.en .lead {
+  color: var(--muted);
+  margin: 0;
+}
+
+.en-points {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.en-points li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.en-points .icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  font-size: 20px;
+}
+
+.en-points p {
+  margin: 0;
+  font-size: 16px;
 }
 
 main section + section {
@@ -378,4 +428,11 @@ main section + section {
 body:has(.hero) header.wrap,
 body:has(.hero) footer.wrap {
   max-width: 1040px;
+}
+
+@media (max-width: 720px) {
+  .en {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
