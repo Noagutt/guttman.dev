@@ -18,7 +18,7 @@
 
     <main id="main" class="wrap">
       <h1>מדיניות פרטיות</h1>
-      <p class="muted">עדכון אחרון: 4 באוקטובר 2026</p>
+      <p class="muted">עדכון אחרון: 25 באוקטובר 2026</p>
 
       <p>
         autoReminder היא תוכנה של גוטמן נעה ("אנחנו"). משרדים (הלקוחות שלנו) משתמשים בה כדי לשלוח
@@ -47,7 +47,7 @@
         <li>שם הלקוח, מספר הטלפון שלו, וקבוצות התזכורות שהמשרד שייך אותו אליהן.</li>
         <li>אילו מסמכים נדרשים ואילו התקבלו.</li>
         <li>סטטוס מסירת ההודעות (נשלחה, נמסרה, נקראה, נכשלה) שמתקבל מ-WhatsApp Business Platform של Meta.</li>
-        <li>מסמכים שהלקוח שולח בתגובה, אם המשרד הפעיל איסוף מסמכים.</li>
+        <li>מספר טלפון שביקש להפסיק לקבל תזכורות (מענה עם מילת עצירה), כדי שלא יישלחו אליו הודעות נוספות.</li>
       </ul>
 
       <h2>מטרת השימוש</h2>
@@ -59,7 +59,10 @@
       <p>
         כדי לחבר את המספר של המשרד ולהעביר אליו עדכוני מסירה, הודעות מ-Meta עוברות דרך שירות חיבור
         שאנחנו מפעילים ב-AWS באזור ישראל. השירות מעביר אותן להתקנה של המשרד ולא שומר את התוכן שלהן.
-        היסטוריית השיחות ואנשי הקשר מאפליקציית WhatsApp Business אינם נשמרים.
+        כברירת מחדל, היסטוריית השיחות ואנשי הקשר מאפליקציית WhatsApp Business אינם נשמרים. משרד שבחר
+        במפורש להפעיל סנכרון אנשי קשר מקבל שם ומספר טלפון של אנשי קשר שהוסיף, עדכן או הסיר באפליקציה,
+        ושומר אותם ברשימת הלקוחות שלו. בנוסף נשמרים רק מועדי הודעות (מתי נשלחה או התקבלה הודעה), לא
+        תוכנן. תוכן שיחות לא נשמר בשום מצב.
       </p>
 
       <h2>האם חובה למסור את המידע</h2>
@@ -90,7 +93,7 @@
 
       <section id="en" lang="en" dir="ltr">
         <h2>Privacy policy (English)</h2>
-        <p class="muted">Last updated: October 4, 2026. The Hebrew version above is the binding one.</p>
+        <p class="muted">Last updated: October 25, 2026. The Hebrew version above is the binding one.</p>
         <p>
           autoReminder is software made by <span lang="he" dir="rtl">גוטמן נעה</span> ("we").
           Offices (our customers) use it to send their own clients WhatsApp reminders about
@@ -108,15 +111,19 @@
         <p>
           <strong>Data processed:</strong> client name, phone number and reminder groups; which
           documents are required and received; message delivery status from Meta's WhatsApp
-          Business Platform; documents clients send in reply, if the office enables it.
+          Business Platform; a phone number that asked to stop reminders (a reply with a stop
+          word), so that no more messages are sent to it.
         </p>
         <p>
           <strong>Use:</strong> only to send the office's reminders, track missing documents and
           show delivery status. We do not sell data or use it for advertising, and share it only
           with Meta, which delivers the WhatsApp messages under its own terms. Messages from Meta pass
           through a connect service we run on AWS in Israel, which forwards them to the office's install
-          and does not store their content. Chat history and contacts from the WhatsApp Business app are
-          not stored.
+          and does not store their content. By default, chat history and contacts from the WhatsApp Business app are not stored. An
+          office that explicitly turns on contact sync receives the name and phone number of
+          contacts it adds, updates or removes in the app, and keeps them in its own client list.
+          Only the times of messages (when one was sent or received) are also stored, never their
+          content. Message content is not stored in any mode.
         </p>
         <p>
           <strong>Storage:</strong> in the office's own install. The office decides how long to keep
